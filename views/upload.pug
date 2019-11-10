@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        <title>Загрузка</title>
+        <meta charset="utf-8" />
+    body
+        <h1>Загрузите файл</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            if err
+                p(style="color: red")= err
+            <input type="file" name="image" /><br><br>
+            <textarea  name="message" rows="4" autofocus></textarea>
+            <br><br>
+            <input name="email" type="email" value="" />
+            <br><br>
+            <input type="submit" value="Отправить" />
+        </form>

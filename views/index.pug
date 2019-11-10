@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Галерея
+  body
+    h1 Галерея изображений
+    if !user
+      a(href='/auth') Войти
+    else
+      a(href='/gallery') Галерея
+      br
+      a(href='/upload') Загрузить
+      br
+      a(href='/auth/logout') Выйти

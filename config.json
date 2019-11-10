@@ -1,0 +1,26 @@
+{
+    "server": {
+        "port": 3000
+    },
+
+    "mail": {
+        "service": "",
+        "host": "smtp.mail.ru",
+        "port": 465,
+        "secure": true,
+        "username": "",
+        "password": ""
+    },
+
+    "database": {
+        "host": "localhost",
+	    "user": "mysql",
+	    "database": "test",
+	    "password": ""
+    },
+
+    "google": {
+        "clientID": "",
+        "clientSecret": ""
+    }
+}

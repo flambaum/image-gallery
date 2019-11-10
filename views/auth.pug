@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        <title>Вход</title>
+        <meta charset="utf-8" />
+    body
+        <a href="/auth/google">Sign In with Google</a>
+        br
+        p или
+        <form action="/auth" method="post">
+            <div>
+                <label>Username:</label>
+                <input type="text" name="username"/>
+            </div>
+            br
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password"/>
+            </div>
+            br
+            <div>
+                <input type="submit" value="Войти"/>
+            </div>
+        </form>
+
+        br
+        <a href="/auth/registration">Зарегистрироваться</a>

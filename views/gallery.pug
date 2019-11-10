@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Галерея
+  body
+    h1 Галерея
+    a(href='/upload') Загрузить
+    br
+    a(href='/auth/logout') Выйти
+    br
+    br
+    div(style='display: flex;')
+      each item in images
+        div(width=300 height=500)
+          img(src='/mini/'+item.name width=300)
+          br
+          p=item.message || 'Без подписи'
